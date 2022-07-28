@@ -17,7 +17,7 @@ export class FruitManagerComponent implements OnInit {
   ngOnInit(): void {
   }
   search() {
-    this.fruits = this.fruits.filter((result) =>
+    this.fruits = this.temp.filter((result) =>
       result?.name?.startsWith(this.searchText)
     );
     if (this.fruits.length == 0) {
